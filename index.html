@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alen Khachatryan — Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="titlebar">
+    <div class="titlebar-inner">
+      <div style="display:flex; align-items:center;">
+        <div class="dots">
+          <div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div>
+        </div>
+        <span class="path">~/alen-khachatryan/portfolio</span>
+      </div>
+      <nav>
+        <a href="#about">о-мне</a>
+        <a href="#projects">проекты</a>
+        <a href="#education">обучение</a>
+        <a href="#contact">контакты</a>
+      </nav>
+      <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-inner">
+        <a href="#about">о-мне</a>
+        <a href="#projects">проекты</a>
+        <a href="#education">обучение</a>
+        <a href="#contact">контакты</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" style="border-top:none;">
+      <div class="terminal">
+        <div class="terminal-head">
+          <div class="dots">
+            <div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div>
+          </div>
+          <span>zsh — 80×24</span>
+        </div>
+        <div class="terminal-body">
+          <div class="line"><span class="prompt">$</span><span class="cmd">whoami</span></div>
+          <div class="name-line">Alen Khachatryan</div>
+          <div class="role-line">Junior Frontend / Full-stack Developer</div>
+
+          <div class="bio-line">Пишу на React и FastAPI. Из крупных проектов пока нет — зато есть пет-проекты, на которых учусь и оттачиваю навыки.<span class="cursor"></span></div>
+
+          <div class="hero-actions">
+            <a href="https://t.me/systemd_dev" class="btn primary" target="_blank" rel="noopener">Связаться</a>
+            <a href="https://github.com/Alen720" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-head">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">// о-мне</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Junior-разработчик из Армении. Учился программированию в школе <strong>Smart Code</strong>, а дальше двигаюсь сам — через пет-проекты и практику.</p>
+          <p>Программирую уже 2 года. Пишу фронтенд на <strong>React</strong> (плюс HTML/CSS/JS в основе) и бэкенд на <strong>FastAPI</strong>. Ещё не работал в крупных коммерческих проектах, зато собрал несколько pet-проектов, чтобы разобраться, как всё устроено от и до.</p>
+          <p>Хобби — это же и работа: когда скучно, сажусь и делаю очередной pet-проект.</p>
+        </div>
+        <div class="stack">
+          <div class="stack-row"><span>Языки</span><span>Python, JavaScript</span></div>
+          <div class="stack-row"><span>Backend</span><span>FastAPI, PostgreSQL, SQLite</span></div>
+          <div class="stack-row"><span>Frontend</span><span>React, HTML, CSS, JS</span></div>
+          <div class="stack-row"><span>Инструменты</span><span>Git, Linux, Bash, Docker, npm, VS Code</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-head">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">// проекты</h2>
+      </div>
+      <div class="tree-root">~/projects $ ls -la</div>
+
+      <div class="projects">
+        <div class="project">
+          <div class="project-branch">├─</div>
+          <div>
+            <div class="project-name">Weather_react <span class="project-ext">/main</span></div>
+            <div class="project-desc">Сайт прогноза погоды. Запрос к погодному API и отображение текущих условий по городу.</div>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">API</span>
+            </div>
+          </div>
+          <a href="https://github.com/Alen720/Weather_react" class="project-link" target="_blank" rel="noopener">открыть</a>
+        </div>
+
+        <div class="project">
+          <div class="project-branch">├─</div>
+          <div>
+            <div class="project-name">Currency-converter <span class="project-ext">/main</span></div>
+            <div class="project-desc">Конвертер валют с актуальным курсом обмена между разными валютами.</div>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">API</span>
+            </div>
+          </div>
+          <a href="https://github.com/Alen720/Currency-converter" class="project-link" target="_blank" rel="noopener">открыть</a>
+        </div>
+
+        <div class="project">
+          <div class="project-branch">├─</div>
+          <div>
+            <div class="project-name">Todo-list-with-db <span class="project-ext">/main</span></div>
+            <div class="project-desc">To-do список с сохранением задач в базе данных — не просто список в памяти, а с постоянным хранением.</div>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">DB</span>
+            </div>
+          </div>
+          <a href="https://github.com/Alen720/Todo-list-with-db" class="project-link" target="_blank" rel="noopener">открыть</a>
+        </div>
+
+        <div class="project">
+          <div class="project-branch">└─</div>
+          <div>
+            <div class="project-name">film-searcher <span class="project-ext">/main</span></div>
+            <div class="project-desc">Поиск фильмов через внешнее API с выводом информации по запросу.</div>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">API</span>
+            </div>
+          </div>
+          <a href="https://github.com/Alen720/film-searcher" class="project-link" target="_blank" rel="noopener">открыть</a>
+        </div>
+      </div>
+
+      <div style="margin-top:22px;">
+        <a href="https://github.com/Alen720?tab=repositories" class="btn ghost" target="_blank" rel="noopener">Все репозитории на GitHub</a>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-head">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">// обучение</h2>
+      </div>
+      <div class="log">
+        <div class="commit">
+          <div class="commit-date">Армения</div>
+          <div>
+            <div class="commit-role"><a href="https://smartcode.am/hy/" target="_blank" rel="noopener">Smart Code</a></div>
+            <div class="commit-company">Школа программирования</div>
+            <div class="commit-desc">Полностью выучил там фронтенд и Python. FastAPI освоил уже сам, после школы — вместе с остальными пет-проектами.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-head">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">// контакты</h2>
+      </div>
+      <div class="contact-terminal">
+        <div class="line"><span class="prompt">$</span><span class="cmd">cat contact.txt</span></div>
+        <div class="contact-list">
+          <a href="https://github.com/Alen720" target="_blank" rel="noopener">github.com/Alen720</a>
+          <a href="https://t.me/systemd_dev" target="_blank" rel="noopener">t.me/systemd_dev</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 Alen Khachatryan</span>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    burgerBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      burgerBtn.classList.toggle('open', isOpen);
+      burgerBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        burgerBtn.classList.remove('open');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
