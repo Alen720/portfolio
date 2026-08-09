@@ -121,6 +121,19 @@
   .cmd{ color:var(--fg); }
   .out{ color:var(--fg-dim); margin:2px 0 18px 24px; font-size:13.5px; }
 
+  .whoami-block{
+    display:flex;
+    align-items:center;
+    gap:20px;
+  }
+  .avatar{
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    border:1px solid var(--line);
+    object-fit:cover;
+    flex-shrink:0;
+  }
   .name-line{
     font-size:clamp(30px, 6vw, 52px);
     font-weight:800;
@@ -262,6 +275,7 @@
   @media (max-width:720px){
     nav{ display:none; }
     .burger{ display:flex; }
+    .avatar{ width:56px; height:56px; }
     .about-grid{ grid-template-columns:1fr; gap:32px; }
     .project{ grid-template-columns: 24px 1fr; }
     .project-link{ grid-column:2; padding-top:0; }
